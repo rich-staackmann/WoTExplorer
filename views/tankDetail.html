@@ -1,0 +1,34 @@
+<div>
+  <table>
+    <tr>
+      <td>
+        <span>{{tank.name_i18n}}</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img ng-src="{{tank.image}}" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Dmg: {{tank.gun_damage_min}} - {{tank.gun_damage_max}}</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Fire Rate: {{tank.gun_rate}}</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Max Speed: {{tank.speed_limit}}</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>Price: {{tank.price_credit | currency:"USD$"}}</span>
+      </td>
+    </tr>
+  </table>
+</div>

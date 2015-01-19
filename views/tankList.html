@@ -1,0 +1,30 @@
+<div>
+  Number of Tanks: {{numTanks}}
+</div>
+
+<table>
+  <tr>
+    <th>
+    </th>
+    <th>
+      Name
+    </th>
+    <th>
+      Type
+    </th>
+  </tr>
+  <tr ng-repeat="tank in tanks">
+    <td>
+      <img ng-src="{{::tank.image_small}}" />
+    </td>
+    <td>
+      <span>{{::tank.name_i18n}}</span>
+    </td>
+    <td>
+      <span>{{::tank.type}}</span>
+    </td>
+    <td>
+      <button ng-click="openTankDetail(tank.tank_id)">View Details</button>
+    </td>
+  </tr>
+</table>
